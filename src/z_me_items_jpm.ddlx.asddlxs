@@ -1,0 +1,73 @@
+@Metadata.layer: #CORE
+@UI:{ headerInfo: { typeName: 'items' } }
+annotate view ZDD_PITEMS_JPM
+    with 
+    
+    
+{
+   
+   @UI.facet: [
+    {
+      id: 'HeaderInfo',
+      type: #IDENTIFICATION_REFERENCE,
+      label: 'Order Details',
+      position: 20
+    }
+  ]
+
+
+ @UI : { lineItem : [ { position : 10, label : 'Id', importance : #MEDIUM } ], 
+           identification : [ { position : 1, label : 'Id' } ] }
+
+Id;
+
+@UI : { lineItem : [ { position : 20, label : 'Name', importance : #MEDIUM } ], 
+           identification : [ { position : 1, label : 'Name' } ] }
+
+Name;
+
+@UI : { lineItem : [ { position : 30, label : 'Descr', importance : #MEDIUM } ], 
+           identification : [ { position : 1, label : 'Descr' } ] }
+Descr;
+
+@UI : { lineItem : [ { position : 40, label : 'Relea', importance : #MEDIUM } ], 
+           identification : [ { position : 1, label : 'Relea' } ] }
+Relea;
+
+@UI : { lineItem : [ { position : 50, label : 'Disco', importance : #MEDIUM } ], 
+           identification : [ { position : 1, label : 'Disco' } ] }
+Disco;
+
+@UI : { lineItem : [ { position : 60, label : 'Price', importance : #MEDIUM } ], 
+           identification : [ { position : 1, label : 'Price' } ] }
+Price;
+
+@UI : { lineItem : [ { position : 70, label : 'Heih', importance : #MEDIUM } ], 
+           identification : [ { position : 1, label : 'Heih' } ] }
+Heih;
+
+@UI : { lineItem : [ { position : 80, label : 'Width', importance : #MEDIUM } ], 
+           identification : [ { position : 1, label : 'Width' } ] }
+Width;
+
+@UI : { lineItem : [ { position : 90, label : 'Depth', importance : #MEDIUM } ], 
+           identification : [ { position : 1, label : 'Depth' } ] }
+Depth;
+
+@UI : { lineItem : [ { position : 100, label : 'Quant', importance : #MEDIUM } ], 
+           identification : [ { position : 1, label : 'Quant' } ] }
+Quant;
+
+@UI : { lineItem : [ { position : 110, label : 'Unito', importance : #MEDIUM } ], 
+           identification : [ { position : 1, label : 'Unito' } ] }
+Unito;
+  
+
+    
+    
+ }
+  
+    
+    
+
+ 

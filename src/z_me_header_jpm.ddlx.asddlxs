@@ -1,0 +1,97 @@
+@Metadata.layer: #CORE
+@UI: { headerInfo: { typeName: 'HEADER',
+                     typeNamePlural: 'HEADER',
+                     title: { type: #STANDARD,
+                              label: 'HEADER',
+                              value: 'id',
+                              iconUrl: 'https://media.licdn.com/dms/image/v2/C4E0BAQGRPtFZleSPoQ/company-logo_200_200/company-logo_200_200/0/1631376912398?e=2147483647&v=beta&t=f0lY8PC-ex9m0gH1ZNfndYh-vIgl--nSt4j143KwtUc'
+                              
+                              
+                              
+                            }
+                   }
+     }
+
+
+
+
+
+
+annotate view ZDD_PHEADER_JPM with
+
+
+
+{
+
+
+
+
+
+
+
+
+
+  @UI.facet: [
+    {
+      id: 'HeaderInfo',
+      type: #IDENTIFICATION_REFERENCE,
+      label: 'Order Details',
+      position: 10
+    }
+  ]
+
+
+
+  @UI : { lineItem : [ { position : 1, label : 'Id', importance : #MEDIUM } ],
+          identification : [ { position : 1, label : 'Id' } ] }
+  id;
+
+  @UI: { lineItem: [{ position: 20, label: 'Email', importance: #MEDIUM }],
+         identification : [ { position : 1, label : 'Email' } ] }
+  email;
+
+  @UI: { lineItem: [{ position: 30, label: 'Fname', importance: #MEDIUM }],
+  identification : [ { position : 1, label : 'Fname' } ] }
+  fname;
+
+  @UI: { lineItem: [{ position: 40, label: 'Lname', importance: #MEDIUM }],
+  identification : [ { position : 1, label : 'Lname' } ]  }
+  lname;
+
+  @UI: { lineItem: [{ position: 50, label: 'Cotry', importance: #MEDIUM }],
+  identification : [ { position : 1, label : 'Cotry' } ] }
+  cotry;
+
+
+  @UI: { lineItem: [{ position: 60, label: 'Creat', importance: #MEDIUM }],
+  identification : [ { position : 1, label : 'Creat' } ] }
+  creat;
+
+  @UI: { lineItem: [{ position: 70, label: 'Deliv', importance: #MEDIUM }],
+  identification : [ { position : 1, label : 'Deliv' } ] }
+  deliv;
+
+  @UI: { lineItem: [{ position: 80, label: 'Ordes', importance: #MEDIUM }],
+  identification : [ { position : 1, label : 'Ordes' } ] }
+  ordes;
+
+  @UI: { lineItem: [{ position: 90, label: 'Imaur', importance: #MEDIUM }],
+  identification : [ { position : 1, label : 'Imaur' } ] }
+  imaur;
+
+
+  @UI.facet: [   {
+        id: 'ItemTable',
+       type: #LINEITEM_REFERENCE,
+       label: 'Items',
+       position: 20,
+       targetElement: 'p_items'
+
+
+     }
+      ]
+
+  p_items;
+
+
+}

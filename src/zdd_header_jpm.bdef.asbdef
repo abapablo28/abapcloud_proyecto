@@ -1,0 +1,27 @@
+managed;// implementation in class zbp_dd_header_jpm unique;
+//strict ( 2 ); //Uncomment this line in order to enable strict mode 2. The strict mode has two variants (strict(1), strict(2)) and is prerequisite to be future proof regarding syntax and to be able to release your BO.
+
+define behavior for ZDD_HEADER_JPM alias header
+persistent table zheader_jpm
+lock master
+//authorization master ( instance )
+//etag master <field_name>
+{
+  // Operaciones estándar
+
+  create;
+  update;
+
+  field (readonly)  id;
+  field (readonly : update) Lname, Fname, Email, Cotry, Deliv, Ordes;
+
+  delete;
+
+ // association p_items {
+   // create;
+  //  update;
+  //}
+
+
+
+}

@@ -1,0 +1,5 @@
+@EndUserText.label: 'DEFINICION SERVICIO HEADER'
+define service Z_SD_HEADER_JPM {
+  expose ZDD_PHEADER_JPM as Header;
+  expose ZDD_PITEMS_JPM  as Items;
+}
